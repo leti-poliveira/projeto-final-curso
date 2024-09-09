@@ -81,53 +81,95 @@
   </style>
 </head>
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mente Viva</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link para o CSS externo -->
+</head>
+
 <body class="body">
+
+  <!-- Início do Cabeçalho -->
   <header role="banner" class="navbar-2 w-nav">
     <div class="w-container">
-      <a href="#" class="w-nav-brand">
+      <!-- Logo -->
+      <a href="#" class="w-nav-brand" aria-label="Logo Mente Viva">
         <img src="/projeto-final-curso/mente-viva/assets/images/lakshmi.jpg" loading="lazy" sizes="100.00000762939453px"
           alt="Mente Viva" class="image-5">
       </a>
-      <nav role="navigation" class="w-nav-menu">
-      
 
-        <div class="w-dropdown">
-          <a href="#sobre-nos" class="nav-link-5 w-nav-link w-dropdown-toggle">Sobre Nós</a>
-          <div class="w-dropdown-list">
-            <a href="#missao" class="w-dropdown-link">Missão e Visão</a>
-            <a href="#equipe" class="w-dropdown-link">Nossa Equipe</a>
-            <a href="#parcerias" class="w-dropdown-link">Parcerias</a>
-          </div>
-        </div>
+      <!-- Menu de Navegação -->
+<nav role="navigation" class="w-nav-menu" aria-label="Menu principal">
 
-        <div class="w-dropdown">
-          <a href="#servicos" class="nav-link-6 w-nav-link w-dropdown-toggle">Serviços</a>
-          <div class="w-dropdown-list">
-            <a href="#aconselhamento" class="w-dropdown-link">Aconselhamento Psicológico</a>
-            <a href="#grupos" class="w-dropdown-link">Grupos de Apoio</a>
-            <a href="#suporte" class="w-dropdown-link">Linha de Suporte 24/7</a>
-            <a href="#workshops" class="w-dropdown-link">Workshops e Palestras</a>
-          </div>
-        </div>
+  <!-- Menu Dropdown 'Sobre Nós' -->
+  <div class="w-dropdown">
+    <a href="#sobre-nos" class="nav-link-5 w-nav-link w-dropdown-toggle">Sobre Nós</a>
+    <div class="w-dropdown-list">
+      <a href="#missao" class="w-dropdown-link">Missão e Visão</a>
+      <a href="#equipe" class="w-dropdown-link">Nossa Equipe</a>
+      <a href="#parcerias" class="w-dropdown-link">Parcerias</a>
+    </div>
+  </div>
 
-       
-        <div class="w-dropdown">
-          <a href="#como-ajudar" class="nav-link-8 w-nav-link w-dropdown-toggle">Como Ajudar</a>
-          <div class="w-dropdown-list">
-            <a href="#doe-agora" class="w-dropdown-link">Doe Agora</a>
-            <a href="#voluntario" class="w-dropdown-link">Seja um Voluntário</a>
-            <a href="#parcerias" class="w-dropdown-link">Parcerias</a>
-          </div>
-        </div>
+  <!-- Menu Dropdown 'Serviços' -->
+  <div class="w-dropdown">
+    <a href="#servicos" class="nav-link-6 w-nav-link w-dropdown-toggle">Serviços</a>
+    <div class="w-dropdown-list">
+      <a href="#aconselhamento" class="w-dropdown-link">Aconselhamento Psicológico</a>
+      <a href="#grupos" class="w-dropdown-link">Grupos de Apoio</a>
+      <a href="#suporte" class="w-dropdown-link">Linha de Suporte 24/7</a>
+      <a href="#workshops" class="w-dropdown-link">Workshops e Palestras</a>
+    </div>
+  </div>
 
-        <a href="#contato" class="nav-link-9 w-nav-link">Contato</a>
+  <!-- Menu Dropdown 'Como Ajudar' -->
+  <div class="w-dropdown">
+    <a href="#como-ajudar" class="nav-link-8 w-nav-link w-dropdown-toggle">Como Ajudar</a>
+    <div class="w-dropdown-list">
+      <a href="#doe-agora" class="w-dropdown-link">Doe Agora</a>
+      <a href="#voluntario" class="w-dropdown-link">Seja um Voluntário</a>
+      <a href="#parcerias" class="w-dropdown-link">Parcerias</a>
+    </div>
+  </div>
+
+  <!-- Menu Dropdown 'Contato' -->
+  <div class="w-dropdown">
+    <a href="#contato" class="nav-link-9 w-nav-link w-dropdown-toggle">Contato</a>
+    <div class="w-dropdown-list">
+      <a href="#telefone" class="w-dropdown-link">Telefone</a>
+      <a href="#email" class="w-dropdown-link">Email</a>
+      <a href="#endereco" class="w-dropdown-link">Endereço</a>
+    </div>
+  </div>
+
+  <!-- Link 'Contato' -->
+  <a href="#doeagora" class="nav-link-9 w-nav-link">DOE AGORA</a>
+
+</nav>
+
+<!-- Botão do Menu (Hamburger Menu para telas móveis) -->
+<div class="menubutton w-nav-button" aria-label="Abrir menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
+  <div class="w-icon-nav-menu"></div>
+</div>
+
+
+        
+
       </nav>
 
-      <div class="menubutton w-nav-button" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0"
-        aria-haspopup="menu" aria-expanded="false">
+      <!-- Botão do Menu (Hamburger Menu para telas móveis) -->
+      <div class="menubutton w-nav-button" aria-label="Abrir menu" role="button" tabindex="0"
+        aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
         <div class="w-icon-nav-menu"></div>
       </div>
+
     </div>
+
+    <!-- Overlay para o menu móvel -->
     <div class="w-nav-overlay" id="w-nav-overlay-0"></div>
   </header>
 
