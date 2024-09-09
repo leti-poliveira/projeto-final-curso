@@ -2,91 +2,55 @@
    Estilo geral do rodapé
 ----------------------------- */
 .footer {
-    background-color: #f8f9fa; /* Cor de fundo clara */
-    padding: 40px 20px; /* Espaçamento interno maior */
-    color: #333; /* Cor do texto */
-    text-align: center; /* Alinhamento central do texto */
-    border-top: 1px solid #e0e0e0; /* Linha separadora no topo */
+  background-color: #360d36; /* Cor de fundo escura */
+  padding: 40px 20px; /* Espaçamento interno maior */
+  color: #ffffff; /* Cor do texto */
+  text-align: center; /* Alinhamento central do texto */
+  border-top: 1px solid #e0e0e0; /* Linha separadora no topo */
+}
+
+.footer-container {
+  max-width: 1200px; /* Largura máxima para centralizar o conteúdo */
+  margin: 0 auto; /* Centraliza o container */
+  display: flex;
+  flex-wrap: wrap; /* Permite que as seções se movam para a próxima linha se necessário */
+  justify-content: space-between; /* Espaça as seções uniformemente */
+}
+
+.footer-item {
+  flex: 1 1 200px; /* Permite que as seções se ajustem de acordo com o tamanho da tela */
+  margin: 0 20px; /* Espaçamento entre as seções */
+  min-width: 200px; /* Largura mínima das seções */
+}
+
+.footer-item h3 {
+  color: #ffffff; /* Cor dos cabeçalhos */
+  margin-bottom: 20px; /* Espaçamento abaixo dos cabeçalhos */
+  font-size: 2em; /* Tamanho do texto dos cabeçalhos aumentado */
+}
+
+.footer-item p {
+  color: #ffffff; /* Cor do texto dos parágrafos */
+  margin-bottom: 15px; /* Espaçamento abaixo dos parágrafos */
+  font-size: 1.2em; /* Tamanho do texto dos parágrafos aumentado */
+}
+
+.footer-bottom {
+  margin-top: 20px; /* Espaçamento acima da seção inferior */
+  font-size: 1em; /* Tamanho da fonte ajustado */
+  color: #ffffff; /* Cor do texto da seção inferior */
+}
+
+/* -----------------------------
+ Rodapé responsivo
+----------------------------- */
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 30px 10px; /* Ajuste do espaçamento em telas pequenas */
   }
-  
-  .footer-container {
-    max-width: 1200px; /* Largura máxima para centralizar o conteúdo */
-    margin: 0 auto; /* Centraliza o container */
-    display: flex;
-    flex-wrap: wrap; /* Permite que as seções se movam para a próxima linha se necessário */
-    justify-content: space-between; /* Espaça as seções uniformemente */
+
+  .footer-item {
+    margin: 0 10px; /* Espaçamento menor entre as seções */
+    min-width: auto; /* Remove a largura mínima em telas pequenas */
   }
-  
-  .footer-section {
-    flex: 1 1 200px; /* Permite que as seções se ajustem de acordo com o tamanho da tela */
-    margin: 0 20px; /* Espaçamento entre as seções */
-    min-width: 200px; /* Largura mínima das seções */
-  }
-  
-  .footer-section h2 {
-    color: #333; /* Cor dos cabeçalhos */
-    margin-bottom: 20px; /* Espaçamento abaixo dos cabeçalhos */
-    font-size: 1.5em; /* Tamanho do texto */
-  }
-  
-  .footer-section p, .footer-section ul {
-    margin-bottom: 15px; /* Espaçamento abaixo dos parágrafos e listas */
-  }
-  
-  /* Remove marcadores das listas não ordenadas */
-  ul {
-    list-style-type: none; /* Remove os marcadores */
-    padding: 0; /* Remove o preenchimento padrão */
-    margin: 0; /* Remove a margem padrão */
-  }
-  
-  .footer-section ul {
-    list-style-type: none; /* Remove os marcadores das listas */
-    padding: 0; /* Remove o preenchimento padrão */
-  }
-  
-  .footer-section ul li {
-    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
-  }
-  
-  .footer-section ul li a {
-    color: #007bff; /* Cor dos links */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    transition: color 0.3s ease-in-out; /* Transição suave para cor */
-  }
-  
-  .footer-section ul li a:hover {
-    color: #0056b3; /* Cor de destaque ao passar o mouse */
-  }
-  
-  .social-icons a {
-    color: #333; /* Cor dos ícones de redes sociais */
-    margin: 0 10px; /* Espaçamento entre os ícones */
-    text-decoration: none; /* Remove o sublinhado dos ícones */
-    font-size: 1.5em; /* Tamanho dos ícones */
-    transition: color 0.3s ease-in-out; /* Transição suave para cor */
-  }
-  
-  .social-icons a:hover {
-    color: #007bff; /* Cor de destaque ao passar o mouse */
-  }
-  
-  .footer-bottom {
-    margin-top: 20px; /* Espaçamento acima da seção inferior */
-    font-size: 0.8em; /* Tamanho da fonte menor para a seção inferior */
-  }
-  
-  /* -----------------------------
-     Rodapé responsivo
-  ----------------------------- */
-  @media screen and (max-width: 767px) {
-    .footer {
-      padding: 30px 10px; /* Ajuste do espaçamento em telas pequenas */
-    }
-  
-    .footer-section {
-      margin: 0 10px; /* Espaçamento menor entre as seções */
-      min-width: auto; /* Remove a largura mínima em telas pequenas */
-    }
-  }
-  
+}
