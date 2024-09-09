@@ -239,33 +239,29 @@
       </div>
     </section>
 
-    <section class="section-4">
-      <div class="w-layout-blockcontainer w-container">
-        <h2 class="heading-4">Entre em Contato</h2>
-        <div class="w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" method="get"
-            action="https://formspree.io/f/myyldbwk">
-            <label for="name" class="field-label">Nome</label>
-            <input type="text" class="text-field w-input" maxlength="256" name="name" data-name="Name" id="name"
-              placeholder="Seu Nome" required="">
-            <label for="email" class="field-label">Email</label>
-            <input type="email" class="text-field w-input" maxlength="256" name="email" data-name="Email" id="email"
-              placeholder="Seu Email" required="">
-            <label for="message" class="field-label">Mensagem</label>
-            <textarea id="message" name="message" placeholder="Sua Mensagem" class="text-field w-input" rows="4"
-              required=""></textarea>
-            <input type="submit" value="Enviar" data-wait="Por favor, espere..." class="submit-button w-button">
-          </form>
-          <div class="w-form-done">
-            <p>Obrigado! Sua mensagem foi enviada com sucesso.</p>
-          </div>
-          <div class="w-form-fail">
-            <p>Oops! Parece que algo deu errado. Por favor, tente novamente.</p>
-          </div>
+     <!-- Início da Seção Contato -->
+  <section id="contato">
+    <h1>Entre em Contato</h1>
+    <p class="lorem-text">Preencha o formulário abaixo e entrarei em contato com você.</p>
+    <div class="form-container">
+      <form action="">
+        <div class="input-single">
+          <label for="nome-box">Seu nome completo</label>
+          <input type="text" name="nome" id="nome-box" class="input" required>
         </div>
-      </div>
-    </section>
-  </main>
+        <div class="input-single">
+          <label for="email-box">Seu email</label>
+          <input type="email" name="email" id="email-box" class="input" required>
+        </div>
+        <div class="input-single">
+          <label for="mensagem-box">Sua mensagem</label>
+          <textarea name="mensagem" id="mensagem-box" class="input" rows="4" required></textarea>
+        </div>
+        <div class="btn">
+          <input type="submit" value="Enviar">
+        </div>
+      </form>
+    </div>
 
   <footer class="footer">
     <div class="footer-container">

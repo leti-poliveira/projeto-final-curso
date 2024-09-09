@@ -4,11 +4,16 @@ body {
     font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     background: #eaeaea;
     overflow-x: hidden; /* Evita barra de rolagem horizontal */
-}
+  }
   
   .wf-force-outline-none[tabindex="-1"]:focus {
     outline: none;
   }
   
-
-  
+  :root {
+    /* Declaração das Variáveis de Tamanho de Fonte */
+    --fonteTitulo: 50px;
+    --fonteSubtitulo: 35px;
+    --fonteParagrafo: 20px;
+    --fonteDetalhes: 14px;
+  }
