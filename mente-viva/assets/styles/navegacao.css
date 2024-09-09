@@ -1,8 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+	margin: 0;
+	font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	background: #eaeaea;
+}
+
+section#nav-test {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#nav-container {
+	position: relative;
+	margin: 60px auto;
+	box-sizing: border-box;
+}
+
+ul {
+	display: flex;
+	background: rgb(50, 54, 57);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 0;
+}
+
+li {
+	display: flex;
+	align-items: center;
+	min-height: 48px;
+	margin-left: 60px;
+	cursor: pointer;
+	user-select: none;
+}
+
+li:first-child {
+	margin-left: 0;
+}
+
+li a {
+	color: rgb(241, 241, 241);
+}
+
 /* -----------------------------
    Estilo geral da barra de navegação
 ----------------------------- */
 
-/* Links com transformação de texto para maiúsculas */
 .nav-link, .nav-link-2, .nav-link-3 {
   text-transform: uppercase;
 }
@@ -10,10 +56,6 @@
 .nav-link-4, .nav-link-5, .nav-link-6 {
   text-align: center;
   text-transform: uppercase;
-}
-
-/* Estilo dos links com cor e fundo */
-.nav-link-4, .nav-link-5, .nav-link-6 {
   color: #fff;
   background-color: #553b82;
 }
@@ -23,9 +65,9 @@
   background-color: #fff;
   margin: 10px 0;
   padding: 10px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
-  display: flex; /* Alinhamento dos itens */
-  align-items: center; /* Alinhamento vertical dos itens */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
 }
 
 /* Estilo da segunda barra de navegação */
@@ -35,23 +77,20 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* -----------------------------
-   Estilo dos links da barra de navegação
------------------------------ */
+/* Estilo dos links da barra de navegação */
 .nav-link-5, .nav-link-6, .nav-link-7, .nav-link-8, .nav-link-9 {
   color: #333;
   text-decoration: none;
   padding: 10px 20px;
   display: inline-block;
-  max-width: 940px;
-  font-weight: 500; /* Texto mais encorpado */
-  transition: color 0.3s ease-in-out; /* Transição suave para cor */
-  vertical-align: middle; /* Alinhamento vertical */
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+  vertical-align: middle;
 }
 
 /* Adicionar ícone de seta nos links com dropdown */
 .w-dropdown-toggle::after {
-  content: " ▼"; /* Ícone de seta para indicar submenus */
+  content: " ▼";
   font-size: 12px;
   margin-left: 5px;
 }
@@ -69,7 +108,6 @@
     padding: 15px 10px;
   }
 
-  /* Ajuste do tamanho da seta nos dropdowns em telas menores */
   .w-dropdown-toggle::after {
     font-size: 10px;
   }
@@ -84,37 +122,35 @@
 }
 
 .w-dropdown-list {
-  display: none; /* Escondido por padrão */
+  display: none;
   position: absolute;
   background-color: #fff;
-  min-width: 180px; /* Largura mínima */
+  min-width: 180px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   z-index: 1;
-  border-radius: 4px; /* Cantos arredondados */
+  border-radius: 4px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.95;
 }
 
 /* Exibir dropdown ao passar o mouse */
 .w-dropdown:hover .w-dropdown-list {
   display: block;
-  opacity: 0.95;
-  transition: opacity 0.3s ease-in-out; /* Transição suave */
 }
 
-/* -----------------------------
-   Estilo dos links dentro do dropdown
------------------------------ */
+/* Estilo dos links dentro do dropdown */
 .w-dropdown-link {
   color: #333;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   border-bottom: 1px solid #f0f0f0;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Efeito suave */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .w-dropdown-link:hover {
-  background-color: #f8f8f8; /* Cor de fundo ao hover */
-  color: #000; /* Mudança da cor ao hover */
+  background-color: #f8f8f8;
+  color: #000;
 }
 
 /* Efeito de hover nos links principais */
@@ -123,10 +159,25 @@
 .nav-link-7:hover, 
 .nav-link-8:hover, 
 .nav-link-9:hover {
-  color: #007bff; /* Cor de destaque ao hover */
+  color: #007bff;
 }
 
 /* Efeito ao passar o mouse sobre o dropdown */
 .w-dropdown-toggle:hover {
   color: #007bff;
+}
+
+/* Linha indicadora do menu */
+#line {
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	background: red;
+	transition: all 150ms ease-in-out;
+}
+
+h1 {
+	margin-top: 30px;
+	font-weight: 500;
+	color: #212121;
 }

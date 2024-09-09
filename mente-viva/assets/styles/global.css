@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    background: #eaeaea;
+  }
+  
+  .wf-force-outline-none[tabindex="-1"]:focus {
+    outline: none;
+  }
+  

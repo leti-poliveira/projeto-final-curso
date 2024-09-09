@@ -2075,11 +2075,7 @@ textarea.w-input, textarea.w-select {
   display: block;
 }
 
-.navbar {
-  background-color: #fff;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+
 
 .container {
   padding-top: 10px;
@@ -2209,11 +2205,7 @@ textarea.w-input, textarea.w-select {
 }
 
 
-.navbar-2 {
-  background-color: #fff;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
+
 
 .image-5 {
   width: 100px;
@@ -2277,10 +2269,7 @@ textarea.w-input, textarea.w-select {
   }
 
 
-  .navbar-2 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+
 
   .heading-3 {
     flex-flow: row;
