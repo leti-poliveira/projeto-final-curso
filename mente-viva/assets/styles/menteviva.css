@@ -1819,17 +1819,7 @@ textarea.w-input, textarea.w-select {
   position: relative;
 }
 
-.w-nav-link {
-  vertical-align: top;
-  color: #222;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-}
+
 
 .w-nav-link.w--current {
   color: #0082f3;
@@ -2100,9 +2090,7 @@ textarea.w-input, textarea.w-select {
   width: 100px;
 }
 
-.nav-link, .nav-link-2, .nav-link-3 {
-  text-transform: uppercase;
-}
+
 
 .section {
   background-color: #d3d3d3;
@@ -2220,10 +2208,6 @@ textarea.w-input, textarea.w-select {
   padding-bottom: 50px;
 }
 
-.nav-link-4, .nav-link-5, .nav-link-6 {
-  text-align: center;
-  text-transform: uppercase;
-}
 
 .navbar-2 {
   background-color: #fff;
@@ -2292,10 +2276,6 @@ textarea.w-input, textarea.w-select {
     background-color: #0000;
   }
 
-  .nav-link-4, .nav-link-5, .nav-link-6 {
-    color: #fff;
-    background-color: #553b82;
-  }
 
   .navbar-2 {
     padding-left: 10px;
