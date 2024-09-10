@@ -1,40 +1,39 @@
-/* Seção de navegação */
-section#nav-test {
-  height: 100vh;
+/* Estilo geral do menu de navegação */
+.navbar {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-#nav-container {
-  position: relative;
-  margin: 60px auto;
-  box-sizing: border-box;
+  justify-content: space-between; /* Espaça o dropdown e o botão DOE AGORA */
 }
 
 /* Estilo do menu principal (ul) */
 ul {
   display: flex;
-  background: rgb(50, 54, 57);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 
-              0 1px 5px 0 rgba(0, 0, 0, 0.12), 
+  background-color: rgb(50, 54, 57); /* Cor de fundo do menu */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.14),
+              0 1px 5px rgba(0, 0, 0, 0.12),
               0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 30px;
   margin: 0;
   list-style-type: none; /* Remove os marcadores das listas */
+  flex-grow: 1;
 }
 
 /* Estilos dos itens do menu (li) */
 li {
   display: flex;
   align-items: center;
-  min-height: 48px;
-  margin-left: 60px;
+  margin-left: 30px; /* Ajuste o espaçamento para alinhamento */
   cursor: pointer;
   user-select: none; /* Evita que o texto seja selecionado ao clicar */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  min-height: 48px;
 }
 
+/* Remove a margem do primeiro item */
 li:first-child {
   margin-left: 0;
 }
@@ -44,22 +43,48 @@ li a {
   color: rgb(241, 241, 241); /* Cor clara para contraste com o fundo escuro */
   text-decoration: none; /* Remove o sublinhado */
   font-size: 16px;
-  transition: color 0.3s ease-in-out;
   padding: 12px 20px;
+  transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  display: inline-block;
 }
 
 /* Estilos de hover para todos os links do menu */
 li a:hover {
   color: #ff6347; /* Cor de destaque ao passar o mouse */
+  border-bottom: 2px solid red; /* Linha vermelha embaixo ao passar o mouse */
 }
 
 /* Estilo específico para os links com números */
-.nav-link-5, .nav-link-6, .nav-link-8, .nav-link-9 {
+.nav-link-5,
+.nav-link-6,
+.nav-link-8 {
   font-weight: bold;
   color: #ffffff;
-  background-color: #333;
-  border-radius: 4px;
-  padding: 10px 15px;
+  background-color: var(--roxoEscuro, #000); /* Usa a variável roxoEscuro ou preto como fallback */
+  border-radius: 50px;
+  padding: 10px 20px; /* Ajuste o padding para manter o formato retangular */
+  margin: 0 10px; /* Espaçamento lateral entre os links */
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+/* Estilo para o botão DOE AGORA */
+.nav-link-9 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--roxoEscuro);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px; /* Borda arredondada */
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin: 0 10px; /* Espaçamento lateral entre o botão e os links */
+}
+
+/* Cor de fundo do botão DOE AGORA ao passar o mouse */
+.nav-link-9:hover {
+  background-color: #187FE7; /* Cor de fundo ao passar o mouse */
 }
 
 /* Estilos de hover para os links com números */
@@ -68,17 +93,8 @@ li a:hover {
 .nav-link-8:hover,
 .nav-link-9:hover {
   color: #ff6347;
-  background-color: #444;
-}
-
-/* Estilo geral do menu de navegação */
-.navbar {
-  background-color: #fff;
-  margin: 10px 0;
-  padding: 10px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
+  background-color: #444; /* Cor de fundo ao passar o mouse */
+  border-bottom: 2px solid red; /* Linha vermelha embaixo ao passar o mouse */
 }
 
 /* Estilo da segunda barra de navegação */
@@ -100,6 +116,8 @@ li a:hover {
   .navbar {
     margin: 0;
     padding: 15px 10px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .navbar-2 {
@@ -113,6 +131,7 @@ li a:hover {
   /* Ajusta os itens do menu para telas pequenas */
   ul {
     flex-direction: column;
+    padding: 0; /* Remove o padding horizontal para colunas */
   }
 
   li {
@@ -169,7 +188,7 @@ li a:hover {
   position: absolute;
   bottom: 0;
   height: 2px;
-  background: red;
+  background: red; /* Ajuste a cor se necessário */
   transition: all 150ms ease-in-out;
 }
 
@@ -178,4 +197,34 @@ h1 {
   margin-top: 30px;
   font-weight: 500;
   color: #212121;
+}
+
+/* Centralização e estilo do botão DOE AGORA */
+.doeagora {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Estilo do botão personalizado DOE AGORA */
+.nav-link-10 {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4B0082; /* Fundo roxo escuro */
+  color: #fff; /* Cor do texto branco */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 100px; /* Borda totalmente arredondada */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+
+/* Efeitos ao passar o mouse sobre o botão DOE AGORA */
+.nav-link-10:hover {
+  background-color: #6A0DAD; /* Um roxo mais claro ao passar o mouse */
+  transform: translateY(-3px); /* Eleva o botão um pouco ao passar o mouse */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
 }
