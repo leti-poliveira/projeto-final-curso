@@ -1,7 +1,7 @@
 /* Estilo da seção de contato */
 #contato {
     position: relative;
-    background-image: url(/Turma_2_Localiza_2024_Portfolio/assets/images/fundocontato.png);
+    background-image: #d3d3d3;
     background-repeat: no-repeat; /* Impede a repetição da imagem */
     background-size: cover; /* A imagem cobre toda a área da seção */
     background-position: center; /* Centraliza a imagem */
@@ -17,6 +17,7 @@
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     overflow: hidden; /* Garante que o pseudo-elemento não ultrapasse os limites da seção */
+
 }
 
 
@@ -42,7 +43,7 @@
     font-family: "Cardo", serif;
     font-weight: 700;
     font-size: var(--fonteTitulo);
-    color: var(--corBranco);
+    color: var(--roxoEscuro);
     text-align: center;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
     position: relative;
@@ -73,7 +74,7 @@
     width: 80%; /* Ajusta a largura do parágrafo */
     margin-left: auto;
     margin-right: auto;
-    color: var(--corBranco);
+    color: var(--roxoEscuro);
     text-align: center;
     margin-top: 30px; /* Ajuste da margem superior */
 }
@@ -82,7 +83,7 @@
 .lorem-text {
     font-family: 'Crimson Text', serif;
     font-size: var(--fonteTitulo);
-    color: #f0f0f0;
+    color: var(--roxoEscuro);
 }
 
 /* Estilo dos links */

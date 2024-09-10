@@ -3,17 +3,33 @@ body {
     margin: 0;
     font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     background: #eaeaea;
-    overflow-x: hidden; /* Evita barra de rolagem horizontal */
-  }
-  
-  .wf-force-outline-none[tabindex="-1"]:focus {
+    overflow-x: hidden;
+    /* Evita barra de rolagem horizontal */
+}
+
+.wf-force-outline-none[tabindex="-1"]:focus {
     outline: none;
-  }
-  
-  :root {
+}
+
+:root {
     /* Declaração das Variáveis de Tamanho de Fonte */
     --fonteTitulo: 50px;
     --fonteSubtitulo: 35px;
     --fonteParagrafo: 20px;
     --fonteDetalhes: 14px;
-  }
+
+    /* Declaração de Variáveis de Cores */
+    --corFundo: #F9E3E3;
+    --corBranco: #FFFFFF;
+    /* Corrigido o código para branco padrão */
+    --roxoEscuro: #4A1F3B;
+    --roxoClaro: #6D3F4F;
+
+    /* Cores adicionais ajustadas */
+    --rosaClaro: #F76C6C;
+    /* Rosa claro */
+    --corLilas: #A593E0;
+    /* Lilás médio */
+    --corPreto: #000000;
+    /* Preto */
+}
