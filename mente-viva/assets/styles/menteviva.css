@@ -2210,6 +2210,14 @@ textarea.w-input, textarea.w-select {
 .image-5 {
   width: 100px;
   margin-top: auto;
+  border-radius: 8px; /* Borda levemente arredondada */
+}
+
+.image-wrapper {
+  border: 2px solid purple; /* Borda roxa de 2px */
+  border-radius: 8px; /* Borda levemente arredondada */
+  display: inline-block; /* Ajusta o comportamento de bloco para a borda */
+  padding: 5px; /* Espaço entre a borda e a imagem, opcional */
 }
 
 @media screen and (max-width: 479px) {
