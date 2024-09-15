@@ -2209,7 +2209,7 @@ textarea.w-input, textarea.w-select {
 
 .image-5 {
   width: 100px;
-  margin-top: 15px;
+  margin-top: auto;
 }
 
 @media screen and (max-width: 479px) {
