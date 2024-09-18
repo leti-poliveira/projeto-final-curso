@@ -2157,6 +2157,21 @@ textarea.w-input, textarea.w-select {
   width: 60px;
 }
 
+.image-3 img {
+  display: block;
+  margin: 0 auto;
+}
+
+.section-2 .div-block {
+  text-align: center; /* Centraliza o conteúdo dentro do div-block */
+}
+
+.section-2 .image-3 {
+  display: inline-block; /* Faz com que a imagem se comporte como um bloco de linha */
+  width: 60px; /* Define a largura da imagem */
+  margin: 0 auto; /* Centraliza horizontalmente dentro do container */
+}
+
 .heading-2 {
   color: #fff;
   text-align: center;
