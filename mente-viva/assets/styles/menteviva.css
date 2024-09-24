@@ -2089,7 +2089,7 @@ textarea.w-input, textarea.w-select {
 
 
 .section {
-  background-color: #d3d3d3;
+  
   padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
@@ -2097,7 +2097,7 @@ textarea.w-input, textarea.w-select {
 
 .image-2 {
   text-align: left;
-  border-radius: 20px;
+  border-radius: 1000px;
   justify-content: center;
   align-items: center;
   width: 600px;
@@ -2105,6 +2105,10 @@ textarea.w-input, textarea.w-select {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  -webkit-border-radius: 10000px;
+  -moz-border-radius: 10000px;
+  -ms-border-radius: 10000px;
+  -o-border-radius: 10000px;
 }
 
 .container-2 {
@@ -2135,7 +2139,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .container-3 {
-  padding-top: 300px;
+  padding-top: 50px;
   display: flex;
 }
 
@@ -2150,7 +2154,22 @@ textarea.w-input, textarea.w-select {
   border-radius: 12px;
   margin-left: 8px;
   padding: 30px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+
 }
+
+
+  .div-block:hover {
+    transform: scale(1.05); /* Aumenta o tamanho em 5% */
+  }
+
+
+
+
 
 .image-3 {
   text-align: center;
@@ -2164,6 +2183,8 @@ textarea.w-input, textarea.w-select {
 
 .section-2 .div-block {
   text-align: center; /* Centraliza o conteúdo dentro do div-block */
+  margin-left: 10px; /* Define a margem à esquerda */
+  margin-right: 10px; /* Define a margem à direita */
 }
 
 .section-2 .image-3 {
