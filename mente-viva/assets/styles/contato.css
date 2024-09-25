@@ -68,13 +68,13 @@
 /* Estilo dos parágrafos */
 #contato p {
     font-family: 'Crimson Text', serif;
-    font-size: 25px; /* Reduz o tamanho da fonte */
+    font-size: 18px; /* Reduz o tamanho da fonte */
     line-height: 1.5; /* Ajusta a altura da linha */
     margin-bottom: 30px;
     width: 80%; /* Ajusta a largura do parágrafo */
     margin-left: auto;
     margin-right: auto;
-    color: var(--roxoEscuro);
+    color: #ffffff;
     text-align: center;
     margin-top: 30px; /* Ajuste da margem superior */
 }
