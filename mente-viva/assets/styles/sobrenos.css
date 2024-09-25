@@ -2,7 +2,7 @@
 #sobre-nos {
     width: 100%;
     padding-top: 1px;
-    border-radius: 10px; /* Bordas arredondadas */
+    /* Bordas arredondadas */
     position: relative;  /* Para o pseudo-elemento */
     z-index: 1;          /* Para manter o #sobre-nos acima do conteúdo */
     background-color: #fff; /* Cor de fundo opcional */
