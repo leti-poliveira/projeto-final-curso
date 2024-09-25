@@ -1,0 +1,91 @@
+/* Estilos da seção "Como Ajudar" */
+.como-ajudar {
+    padding: 40px;
+    background-color: #d3d3d3;
+  }
+  
+  .container-ajudar {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .heading-ajudar {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .paragraph-ajudar {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  /* Estilos das opções de ajuda */
+  .opcoes-ajuda {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .opcao-doacao, .opcao-cadastro {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: left;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Botão de doação */
+  .botao-doacao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .botao-doacao:hover {
+    background-color: #218838;
+  }
+  
+  /* Estilos do formulário de cadastro */
+  .form-cadastro {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-cadastro label {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .form-cadastro input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .botao-cadastro {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .botao-cadastro:hover {
+    background-color: #0056b3;
+  }
